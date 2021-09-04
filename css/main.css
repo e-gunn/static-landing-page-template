@@ -88,37 +88,37 @@ textarea {
    ========================================================================== */
 
 header {
-  background: red;
+  background: #e8e8e8;
   height: 50px;
 }
 
 .hero-area {
-  background: grey;
+  background: #c8c8c8;
   height: 500px;
 }
 
 .services {
-  background: brown;
+  background: #b0b0b0;
   height: 400px;
 }
 
 .about {
-  background: black;
+  background: #808080;
   height: 400px;
 }
 
 .testimonials {
-  background: yellow;
+  background: #606060;
   height: 200px;
 }
 
 .contact {
-  background: orange;
+  background: #303030;
   height: 400px;
 }
 
 footer {
-  background: blue;
+  background: #000;
   height: 200px;
 }
 
