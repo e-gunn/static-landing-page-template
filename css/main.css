@@ -87,39 +87,319 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ------------------------- General Styles --------------------------------- */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 2.25em;
+  font-weight: 500;
+  margin: 0;
+}
+
+h2,
+h3,
+h4 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  margin: 60px 0 15px 0;
+}
+
+p {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.285;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+.content-wrapper {
+  width: 100%;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+  width: 100%;
+}
+
+/* ------------------------- Header Section ------------------------------- */
+
 header {
   background: #e8e8e8;
-  height: 50px;
 }
+
+header .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  color: #000;
+  font-size: 2em;
+}
+
+.logo a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.logo i {
+  padding: 20px;
+  padding-right: 10px;
+}
+
+.logo h6 {
+  font-family: "Mulish" sans-serif;
+  font-size: 0.4em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.logo i:hover,
+.logo h6:hover {
+  color: #5c93ce;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-list {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 75px;
+  background: #000;
+  float: right;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.nav-list li {
+  opacity: 0;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all 0.5s;
+}
+
+.nav-list li a {
+  color: #fff;
+  font-size: 1.125em;
+  text-transform: uppercase;
+}
+
+.nav-list li a.active,
+.nav-list li a:hover {
+  color: #5c93ce;
+  transition: 0.5s;
+}
+
+.hamburger-btn {
+  display: flex;
+  justify-content: flex-end;
+  color: #000;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.hamburger-btn i {
+  padding: 20px;
+  transition: opacity 1s ease-in;
+}
+
+.hamburger-btn i:hover {
+  opacity: 0.7;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav-list {
+  height: 100vh;
+}
+
+#check:checked ~ .nav-list li {
+  opacity: 1;
+}
+
+/* ------------------------- Main Section --------------------------------- */
 
 .hero-area {
   background: #c8c8c8;
   height: 500px;
 }
 
+/* ------------------------- Services Section ------------------------------ */
+
 .services {
   background: #b0b0b0;
   height: 400px;
 }
 
+/* ------------------------- About Section --------------------------------- */
+
 .about {
-  background: #808080;
-  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #808080;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  padding-top: 20px;
 }
+
+.about .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.about h2 {
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.about-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+
+.about-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 30px;
+}
+
+.about-description p {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.about figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+  width: 100%;
+}
+
+.about img {
+  border: 5px solid #fff;
+  margin: 20px 30px;
+  max-width: 300px;
+}
+
+/* ------------------------- Testimonials Section --------------------------- */
 
 .testimonials {
   background: #606060;
   height: 200px;
 }
 
+/* ------------------------- Contact Section --------------------------------- */
+
 .contact {
   background: #303030;
   height: 400px;
 }
 
+/* ------------------------- Footer Section --------------------------------- */
+
 footer {
   background: #000;
-  height: 200px;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.copyright {
+  width: 100%;
+}
+
+.copyright p {
+  color: #fff;
+  padding: 50px;
+  margin: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
 /* ==========================================================================
