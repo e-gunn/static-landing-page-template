@@ -143,7 +143,7 @@ figure {
 }
 
 .content-wrapper {
-  width: 100%;
+  width: 90%;
 }
 
 header,
@@ -168,7 +168,6 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   padding: 0;
-  width: 100%;
 }
 
 nav {
@@ -202,12 +201,8 @@ nav {
   flex-flow: row wrap;
 }
 
-.logo i {
-  padding: 20px;
-  padding-right: 10px;
-}
-
 .logo h6 {
+  color: #000;
   font-family: "Mulish" sans-serif;
   font-size: 0.4em;
   margin: 0;
@@ -262,7 +257,7 @@ nav {
 }
 
 .hamburger-btn i {
-  padding: 20px;
+  padding: 20px 0;
   transition: opacity 1s ease-in;
 }
 
@@ -285,15 +280,53 @@ nav {
 /* ------------------------- Main Section --------------------------------- */
 
 .hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   background: #c8c8c8;
-  height: 500px;
+}
+
+/* ------------------------- Testimonials Section --------------------------- */
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background: #606060;
+}
+
+.testimonials .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.testimonial-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 /* ------------------------- Services Section ------------------------------ */
 
 .services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   background: #b0b0b0;
-  height: 400px;
+}
+
+.services .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* ------------------------- About Section --------------------------------- */
@@ -304,8 +337,6 @@ nav {
   align-items: center;
   flex-flow: row wrap;
   background-color: #808080;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
   padding-top: 20px;
 }
 
@@ -314,13 +345,6 @@ nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.about h2 {
-  color: #fff;
-  padding: 0;
-  text-align: center;
-  width: 100%;
 }
 
 .about-item {
@@ -363,18 +387,21 @@ nav {
   max-width: 300px;
 }
 
-/* ------------------------- Testimonials Section --------------------------- */
-
-.testimonials {
-  background: #606060;
-  height: 200px;
-}
-
 /* ------------------------- Contact Section --------------------------------- */
 
 .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   background: #303030;
-  height: 400px;
+}
+
+.contact .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 /* ------------------------- Footer Section --------------------------------- */
@@ -490,8 +517,46 @@ footer .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Tablet Styles Here */
+
+  /* ------------------------- Header Section ------------------------------- */
+
+  /* ------------------------- Testimonials Section -------------------------- */
+
+  .testimonial-item {
+    padding: 0 30px;
+    width: 30%;
+  }
+
+  /* ------------------------- Services Section ------------------------------ */
+
+  /* ------------------------- About Section --------------------------------- */
+
+  /* ------------------------- Contact Section ------------------------------- */
+
+  /* ------------------------- Footer Section --------------------------------- */
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Desktop Styles Here */
+
+  /* ------------------------- Header Section ------------------------------- */
+
+  /* ------------------------- Testimonials Section -------------------------- */
+
+  .testimonial-item {
+    padding: 0;
+    width: 30%;
+  }
+
+  /* ------------------------- Services Section ------------------------------ */
+
+  /* ------------------------- About Section --------------------------------- */
+
+  /* ------------------------- Contact Section ------------------------------- */
+
+  /* ------------------------- Footer Section --------------------------------- */
 }
 
 @media print,
