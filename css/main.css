@@ -169,6 +169,7 @@ header .content-wrapper {
   flex-flow: row wrap;
   background: #e8e8e8;
   padding: 0;
+  width: 100%;
 }
 
 nav {
@@ -281,11 +282,13 @@ nav {
 /* ------------------------- Main Section --------------------------------- */
 
 .hero-area {
+  background: url(../img/hero.jpg) center no-repeat #c8c8c8;
+  background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-  background: #c8c8c8;
+  min-height: 500px;
+  width: 100%;
 }
 
 /* ------------------------- Testimonials Section --------------------------- */
@@ -611,6 +614,14 @@ footer .content-wrapper {
   /* Desktop Styles Here */
 
   /* ------------------------- Header Section ------------------------------- */
+
+  .logo {
+    width: 50%;
+  }
+
+  .logo h6 {
+    font-size: 0.5em;
+  }
 
   /* ------------------------- Testimonials Section -------------------------- */
 
