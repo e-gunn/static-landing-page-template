@@ -468,19 +468,22 @@ footer .content-wrapper {
   width: 100%;
 }
 
-.contact-social {
+.footer-contact i {
+  padding-right: 12px;
+}
+
+.footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.contact-social h4 {
+  padding-top: 30px;
   width: 100%;
 }
 
-.contact-social p {
-  width: 50%;
+.footer-social i {
+  font-size: 1.5em;
+  padding-right: 20px;
 }
 
 .copyright {
@@ -623,6 +626,13 @@ footer .content-wrapper {
   /* ------------------------- Contact Section ------------------------------- */
 
   /* ------------------------- Footer Section --------------------------------- */
+
+  .footer-logo,
+  .footer-services-list,
+  .footer-nav-list,
+  .footer-contact {
+    width: 25%;
+  }
 }
 
 @media print,
