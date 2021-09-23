@@ -136,7 +136,17 @@ h4 {
   font-family: "Playfair Display", serif;
   font-size: 1.875em;
   font-weight: 500;
-  margin: 60px 0 15px 0;
+}
+
+h6 {
+  color: #5c93ce;
+  font-size: 0.75em;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 p {
@@ -226,6 +236,7 @@ nav {
   font-size: 0.4em;
   margin: 0;
   text-transform: uppercase;
+  width: 50%;
 }
 
 .logo i:hover,
@@ -343,11 +354,10 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0;
-  margin: 0 20px;
-  width: 30%;
+  width: 60%;
 }
 
+/*
 .social-icons p {
   display: flex;
   justify-content: center;
@@ -355,13 +365,15 @@ nav {
   background-color: #000;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  height: 70px;
-  width: 70px;
+  margin: 5px;
+  height: 40px;
+  width: 40px;
 }
+*/
 
 .social-icons p i {
   color: #fff;
-  font-size: 1.3125em;
+  font-size: 1em;
 }
 
 .social-icons i:hover {
@@ -377,6 +389,7 @@ nav {
   align-items: center;
   flex-flow: row wrap;
   background: #606060;
+  padding: 50px 0;
 }
 
 .testimonials .content-wrapper {
@@ -391,7 +404,16 @@ nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  border: 1px solid #344a5f;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  margin: 25px;
   width: 100%;
+}
+
+.testimonial-item p {
+  text-align: center;
 }
 
 /* ------------------------- Services Section ------------------------------ */
@@ -402,6 +424,16 @@ nav {
   align-items: center;
   flex-flow: row wrap;
   background: #b0b0b0;
+  padding: 50px 0;
+}
+
+.services h6 {
+  margin-top: 50px;
+}
+
+.services h2 {
+  margin-top: 0;
+  text-align: center;
 }
 
 .services .content-wrapper {
@@ -409,6 +441,26 @@ nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.services-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.services i {
+  font-size: 3.75em;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.services-item-description {
+  color: #fff;
+  padding: 20px 60px;
+  text-align: center;
 }
 
 /* ------------------------- About Section --------------------------------- */
@@ -419,10 +471,17 @@ nav {
   align-items: center;
   flex-flow: row wrap;
   background-color: #808080;
-  padding-top: 20px;
+  padding: 50px 0;
 }
 
 .about .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.about-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -436,6 +495,7 @@ nav {
   flex-flow: row wrap;
   padding-bottom: 50px;
   padding-top: 30px;
+  width: 100%;
 }
 
 .about-description {
@@ -444,6 +504,7 @@ nav {
   align-items: center;
   flex-flow: row wrap;
   margin: 30px;
+  width: 100%;
 }
 
 .about-description p {
@@ -455,7 +516,7 @@ nav {
 }
 
 .about-description h2 {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .about figure {
@@ -479,7 +540,16 @@ nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background: #e8e8e8;
+  background: #000;
+  padding: 50px 0;
+}
+
+.portfolio h6 {
+  margin-top: 50px;
+}
+
+.portfolio h2 {
+  margin-top: 0;
 }
 
 .portfolio .content-wrapper {
@@ -491,7 +561,7 @@ nav {
 }
 
 .portfolio img {
-  border: 1px solid #000;
+  border: 1px solid #fff;
   padding: 0;
   margin: 0;
   width: 100%;
@@ -504,6 +574,7 @@ nav {
   justify-content: center;
   align-items: center;
   background: #303030;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -521,6 +592,10 @@ nav {
   flex-flow: row wrap;
   padding: 50px;
   width: 100%;
+}
+
+.contact-description h6 {
+  text-align: left;
 }
 
 .contact-description p {
@@ -561,6 +636,7 @@ nav {
 
 footer {
   background: #000;
+  padding-top: 50px;
 }
 
 footer .content-wrapper {
@@ -569,6 +645,11 @@ footer .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   width: 80%;
+}
+
+.footer-logo,
+.footer-logo h4 {
+  color: #5c93ce;
 }
 
 .footer-services-list {
@@ -624,6 +705,7 @@ footer .content-wrapper {
 }
 
 .footer-contact i {
+  color: #5c93ce;
   padding-right: 12px;
 }
 
@@ -637,6 +719,7 @@ footer .content-wrapper {
 }
 
 .footer-social i {
+  color: #5c93ce;
   font-size: 1.5em;
   padding-right: 20px;
 }
@@ -762,10 +845,21 @@ footer .content-wrapper {
 
   /* ------------------------- Services Section ------------------------------ */
 
+  .services-item {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+
   /* ------------------------- About Section --------------------------------- */
 
   .about-description {
     padding: 0 50px;
+    text-align: center;
+  }
+
+  .about-description h2,
+  .about-description h6 {
     text-align: center;
   }
 
@@ -812,30 +906,54 @@ footer .content-wrapper {
     width: 50%;
   }
 
+  .social-icons {
+    width: 30%;
+  }
+
   /* ------------------------- Testimonials Section -------------------------- */
 
   .testimonial-item {
-    padding: 0;
-    width: 30%;
+    margin: 10px;
+    width: 25%;
   }
 
   /* ------------------------- Services Section ------------------------------ */
 
+  .services article {
+    width: 25%;
+  }
+
+  .services p {
+    font-size: 1.125em;
+  }
+
   /* ------------------------- About Section --------------------------------- */
 
-  .about figure {
-    width: 40%;
+  .about-content {
+    margin: 50px 0;
+  }
+
+  .about-item {
+    padding-bottom: 0;
+    padding-top: 0;
+    width: 50%;
+  }
+
+  .about img {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   .about-description {
     text-align: left;
     padding: 0;
     margin: 0;
-    width: 40%;
+    width: 50%;
   }
 
   .about-description p {
     font-size: 1.3em;
+    margin-right: 30px;
   }
 
   /* ------------------------- Portfolio Section ------------------------------ */
@@ -845,6 +963,10 @@ footer .content-wrapper {
   }
 
   /* ------------------------- Contact Section ------------------------------- */
+
+  .contact {
+    padding: 0;
+  }
 
   .contact .content-wrapper {
     width: 100%;
