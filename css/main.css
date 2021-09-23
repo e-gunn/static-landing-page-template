@@ -454,6 +454,10 @@ nav {
   margin: 0;
 }
 
+.about-description h2 {
+  margin-top: 20px;
+}
+
 .about figure {
   display: flex;
   justify-content: center;
@@ -466,7 +470,31 @@ nav {
 .about img {
   border: 5px solid #fff;
   margin: 20px 30px;
-  max-width: 300px;
+}
+
+/* ------------------------- Portfolio Section ------------------------------ */
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background: #e8e8e8;
+}
+
+.portfolio .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.portfolio img {
+  border: 1px solid #000;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 /* ------------------------- Contact Section --------------------------------- */
@@ -548,6 +576,7 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  line-height: 1.5;
   width: 100%;
 }
 
@@ -566,6 +595,7 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  line-height: 1.5;
   width: 100%;
 }
 
@@ -734,6 +764,22 @@ footer .content-wrapper {
 
   /* ------------------------- About Section --------------------------------- */
 
+  .about-description {
+    padding: 0 50px;
+    text-align: center;
+  }
+
+  .about-description p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+
+  /* ------------------------- Portfolio Section ------------------------------ */
+
+  .portfolio-image {
+    width: 50%;
+  }
+
   /* ------------------------- Contact Section ------------------------------- */
 
   .services-button {
@@ -777,6 +823,27 @@ footer .content-wrapper {
 
   /* ------------------------- About Section --------------------------------- */
 
+  .about figure {
+    width: 40%;
+  }
+
+  .about-description {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+  }
+
+  .about-description p {
+    font-size: 1.3em;
+  }
+
+  /* ------------------------- Portfolio Section ------------------------------ */
+
+  .portfolio-image {
+    width: 20%;
+  }
+
   /* ------------------------- Contact Section ------------------------------- */
 
   .contact .content-wrapper {
@@ -817,6 +884,10 @@ footer .content-wrapper {
   .footer-contact {
     width: 25%;
   }
+}
+
+.footer-nav-list {
+  margin-top: -25px;
 }
 
 @media print,
