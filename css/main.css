@@ -567,6 +567,10 @@ nav {
   width: 100%;
 }
 
+.portfolio-image {
+  overflow: hidden;
+}
+
 /* ------------------------- Contact Section --------------------------------- */
 
 .contact {
