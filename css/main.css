@@ -704,6 +704,11 @@ footer .content-wrapper {
   width: 100%;
 }
 
+.footer-contact a:hover {
+  color: #5c93ce;
+  cursor: pointer;
+}
+
 .footer-contact i {
   color: #5c93ce;
   padding-right: 12px;
